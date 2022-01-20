@@ -2,7 +2,7 @@
 Made By Mayur Raut
 To learn C Programming
 17/01/2022
-Last Edit By Author: 20/01/2022
+Last Edited By Author: 20/01/2022
 */
 
 #include <stdio.h>
