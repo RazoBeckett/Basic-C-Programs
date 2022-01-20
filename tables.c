@@ -2,6 +2,7 @@
 Made By Mayur Raut
 To learn C Programming
 17/01/2022
+Last Edit By Author: 20/01/2022
 */
 
 #include <stdio.h>
@@ -10,38 +11,41 @@ int main()
 {
 
     // a variable is number which to be multiplied.
-    int a;
+    int usr_input, exit;
 
-    // exit is add to let the program remain open so user can read the tables.
-    char exit;
+    // Giving credits to me, 'YOU CAN ADD YOUR NAME INSTEAD FOR MINE'
+    printf("All rights reserved - Mayur Raut 2022\n\n");
 
-    // Kudh Ko credits toh dena banta hai.
-    printf("All rights reserved - MAYUR RAUT 2022\n\n");
+    // do is a loop statement.
+    do
+    {
+        // Asking user for input.
+        printf("which number's table you want?\nEnter 0 if want to exit\n");
 
-    // questioning statement.
-    printf("which number's table you want?\n");
+        // 'scanf' is used for taking inputs from user.
+        scanf("%d", &usr_input);
 
-    // scanf is used for taking inputs from user.
-    scanf("%d", &a);
+        // 'if' is is conditional statements
+        if (usr_input == 0)
+        {
+            printf("exitting...");
+            break;
+        }
+        printf("\nThe Table of %d is:\n", usr_input);
 
-    printf("\nThe Table of %d is:\n", a);
+        // This code will represent table means this performs multiplication.
+        printf("%d * 1  = %d\n", usr_input, usr_input * 1);
+        printf("%d * 2  = %d\n", usr_input, usr_input * 2);
+        printf("%d * 3  = %d\n", usr_input, usr_input * 3);
+        printf("%d * 4  = %d\n", usr_input, usr_input * 4);
+        printf("%d * 5  = %d\n", usr_input, usr_input * 5);
+        printf("%d * 6  = %d\n", usr_input, usr_input * 6);
+        printf("%d * 7  = %d\n", usr_input, usr_input * 7);
+        printf("%d * 8  = %d\n", usr_input, usr_input * 8);
+        printf("%d * 9  = %d\n", usr_input, usr_input * 9);
+        printf("%d * 10 = %d\n\n", usr_input, usr_input * 10);
 
-    // This code will represent table means this performs multiplication.
-    printf("%d * 1  = %d\n", a, a * 1);
-    printf("%d * 2  = %d\n", a, a * 2);
-    printf("%d * 3  = %d\n", a, a * 3);
-    printf("%d * 4  = %d\n", a, a * 4);
-    printf("%d * 5  = %d\n", a, a * 5);
-    printf("%d * 6  = %d\n", a, a * 6);
-    printf("%d * 7  = %d\n", a, a * 7);
-    printf("%d * 8  = %d\n", a, a * 8);
-    printf("%d * 9  = %d\n", a, a * 9);
-    printf("%d * 10 = %d\n\n", a, a * 10);
+    } while (usr_input != 0);
 
-    // Nothing just exiting text
-    printf("Enter Any Digit Then Press Enter To Exit\n");
-
-    // Exit Input
-    scanf("%d", &exit);
     return 0;
 }
